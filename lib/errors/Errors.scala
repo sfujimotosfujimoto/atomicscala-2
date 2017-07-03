@@ -1,7 +1,7 @@
 /*  / sfujimoto: 2017/07/02 23:27 */
 package errors
 
-object Errors extends App {
+object Errors {
  case class Except1(why:String) extends Exception(why)
  case class Except2(n:Int) extends Exception(n.toString)
  case class Except3(msg:String, d:Double) extends Exception(s"$msg $d")
